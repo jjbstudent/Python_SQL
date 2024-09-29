@@ -8,7 +8,7 @@ cursor = connection.cursor()
 
 
 def makeTable():
-    #Make the database table if it does not exist 
+    #Make the database table if it does not exist
     #the SQl will make a table called main, add an id, name and colour field
     command1 = "CREATE TABLE IF NOT EXISTS main(id INTEGER PRIMARY KEY, name TEXT, colour TEXT)"
     cursor.execute(command1)
@@ -24,3 +24,8 @@ def makeTable():
 
 #run the function to make the table
 makeTable()
+
+
+# use Db browser to view created database - See Support files Slides
+# Run SQL commands line by line in VS Code
+# Run SQL commands in SLQLite3 / DB Browser 
